@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{  margin-left: 10px;
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+        body{background-color: rgba(243, 143, 13, 0.825);}
+        body{color: rgb(0, 2, 1);}
+        header{color: rgb(0, 2, 3);}
+        hr{color: blue;}
+        textarea{
+            width: 100%;
+        }
+        select{
+            width: 100%;
+        }
+        #input1{
+            width: 100%;
+        }
+        #comment{
+            width: 100%;
+            height: 100px;
+        }
+        button{
+            width: 100%;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(45deg,#d2001a, #7462ff, #f48e21, #23d5ab);
+            background-size: 300% 300%;
+            animation: color 12s ease-in-out infinite;
+        }
+        @keyframes color{
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <background-color:black></background-color:black>
+
+    <header>
+    <h1><center><b><u> Feedback Survey Form </u> </b></center></h1>
+    </header>
+    <p><i>Name:</i></p>
+        <input id="input1" type="text" placeholder="Write your name here">
+        <p><i>Email:</i></p>
+        <input id="input1" type="Text" placeholder="Write your email here">
+        <p><i>Age:</i></p>
+        <input id="input1" type="Text" placeholder="Write your age here">
+        <br>
+        <hr>
+ <b>Type of Feedback</b>
+<br>
+ <select city="po">
+ <option value="positive">Positive 😊👌</option>
+ <option value="negetive">Negative 😒(•_•)</option>
+ <option value="negetive">Suggestion😁🤔</option>
+</select>
+<br>
+<hr>
+
+<textarea name="suggetion" placeholder=" Pls give your suggetion here" rows="5"></textarea>
+
+<br>
+<h2><b>Services used</b></h2>
+<input type="checkbox" id="service 1" name="Service 1"><b>Service 1</b>
+<label for="service 1"></label><br>
+<input type="checkbox" id="service 1" name="Service 1"><b>Service 2</b>
+<label for="service 2" ></label><br>
+<input type="checkbox" id="service 1" name="Service 1"><b>Service 3</b>
+<label for="service 3"></label>
+<hr>
+<br>
+<h4>Additional Comments</h4>
+<br>
+<textarea id="comment" name="Additional Comments" placeholder="Write your Additional Comments here"></textarea>
+<br>
+<hr>
+<button style="background: green;color: black;>">Submit Feedback</button> 
+<hr>
+</form>
+</body>
+</html>
